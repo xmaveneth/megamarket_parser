@@ -93,7 +93,7 @@ def main():
     if max_price and min_price and (max_price.isdigit() and min_price.isdigit()):
         filter = {
             "88C83F68482F447C9F4E401955196697": {"min": int(min_price), "max": int(max_price)},# фильтр по цене
-            "4CB2C27EAAFC4EB39378C4B7487E6C9E": ["1"]}# фильтр по наличию товара
+            "4CB2C27EAAFC4EB39378C4B7487E6C9E": ["1"]}  # фильтр по наличию товара
         json_data = json.dumps(filter)
         # Кодирование JSON строки для передачи через URL
         url_encoded_data = parse.quote(json_data)
